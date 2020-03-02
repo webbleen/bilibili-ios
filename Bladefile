@@ -1,0 +1,17 @@
+#
+# Uncomment below to specify your own resources.
+# See https://github.com/jondot/blade for more information.
+#
+
+blades:
+  - source: Blades/AppIcon_1024.png # this image should be the only image, and the biggest image you can use (typically for icons, 1024x1024)
+    mount: bilibili/Assets.xcassets/AppIcon.appiconset
+    contents: true  # use 'false' if you want to only update existing catalog, 'true' if you want to generate a full catalog every time
+  - source: Blades/StartPage/bilibili_splash_iphone_bg@3x.png
+    mount: bilibili/Assets.xcassets/StartPage/bilibili_splash_iphone_bg.imageset # you can also generate regular image sets, not just app icons
+#  - source: spaceship.png
+#    mount: project_name/Images.xcassets/Spaceship.imageset # you can also generate regular image sets, not just app icons
+#  - source: iTunesArtwork@2x.png
+#    template: templates/iphone-appicon.json # use a template if you want to batch build catalogs regardless of an xcode project (e.g. as part of a CI process)
+#    out: out/newiphone
+#    contents: true
