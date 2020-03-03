@@ -14,8 +14,10 @@ import UIKit
 import SnapKit
 import SDWebImage
 
-class LaunchView: UIView {
+class LaunchView: BaseView {
 
+    weak var delegate: LaunchViewDelegate?
+    
     var timer: Timer!
     var interval: Int = 5
     
@@ -95,6 +97,8 @@ class LaunchView: UIView {
     }
     
     @objc private func imageTouchAction() {
+        print("LaunchView.imageTouchAction")
+        delegate?.launchImageDidTap()
         dismiss()
     }
     

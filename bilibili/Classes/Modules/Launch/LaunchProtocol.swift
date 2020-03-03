@@ -9,6 +9,6 @@
 import Foundation
 
 protocol LaunchProtocol {
-    func onGetCacheSuccess(model: LaunchModel?)
+    func onGetCacheSuccess(model: LaunchResponseModel?)
     func onGetCacheFailure(error: Error)
 }

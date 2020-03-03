@@ -14,7 +14,7 @@ target 'bilibili' do
   pod 'SnapKit', '~> 5.0.0'
   pod 'HandyJSON'
   pod 'Alamofire', '~> 5.0.0'
-  pod 'Kingfisher', '~> 5.2.0'
+  #pod 'Kingfisher', '~> 5.2.0'
 
 end
 

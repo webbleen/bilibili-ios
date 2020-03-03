@@ -8,37 +8,56 @@
 
 import UIKit
 
-class LaunchViewController: UIViewController {
-   
-    lazy private var presenter: LaunchPresenter = {
-        return LaunchPresenter<LaunchViewController>()
+class LaunchViewController: BaseViewController {
+    
+    lazy private var presenter: LaunchPresenterInput = {
+        return LaunchPresenter(view: self)
     }()
    
     lazy private var launchView: LaunchView = {
         let launchView = LaunchView(frame: self.view.frame)
         return launchView
     }()
-    
-    override init(nibName nibNameOrNil: String?, bundle nibBundleOrNil: Bundle?) {
-        super.init(nibName: nil, bundle: nil)
-        
-        self.presenter.initial(self)
-    }
-    
-    required init?(coder: NSCoder) {
-        fatalError("init(coder:) has not been implemented")
-    }
 
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
-        //getLaunchInfo()
+        setUp()
+        
         view = launchView
     }
+    
+    func setUp() {
+        let launchParamObj = self.paramObj as! LaunchParamObj
+        switch launchParamObj.launchType {
+        case .normal:
+            normalLaunch()
+        default:
+            activeLaunch()
+        }
+    }
+    
+    func normalLaunch() {
+        let width = UIScreen.main.bounds.width
+        let height = UIScreen.main.bounds.height
+        let scale_screen = UIScreen.main.scale
+        
+        var requestModel = LaunchRequestModel()
+        requestModel.build = "66666"
+        requestModel.channel = "appstore"
+        requestModel.width = "\(width * scale_screen)"
+        requestModel.height = "\(height * scale_screen)"
+        
+        getLaunchInfo(requestModel: requestModel)
+    }
+    
+    func activeLaunch() {
+        
+    }
 
-    func getLaunchInfo() -> Void {
-        self.presenter.getInfo()
+    func getLaunchInfo(requestModel: LaunchRequestModel) -> Void {
+        self.presenter.getLaunchInfo(requestModel: requestModel)
     }
 
     /*
@@ -55,11 +74,24 @@ class LaunchViewController: UIViewController {
 
 
 extension LaunchViewController: LaunchProtocol {
-    func onGetCacheSuccess(model: LaunchModel?) {
-        print("CacheViewController:onGetCacheSuccess")
+    func onGetCacheSuccess(model: LaunchResponseModel?) {
+        print("LaunchViewController:onGetCacheSuccess")
     }
     
     func onGetCacheFailure(error: Error) {
-        print("CacheViewController:onGetCacheFailure")
+        print("LaunchViewController:onGetCacheFailure")
+    }
+}
+
+extension LaunchViewController: LaunchViewDelegate {
+    func launchImageDidTap() {
+        print("LaunchViewController:launchImageDidTap")
+        self.presenter.launchImageDidTap()
+    }
+}
+
+extension LaunchViewController: LaunchPresenterOutput {
+    func launchSuccess() {
+        print("LaunchViewController:launchSuccess")
     }
 }

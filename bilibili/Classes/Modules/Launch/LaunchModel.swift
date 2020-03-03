@@ -6,26 +6,13 @@
 //  Copyright © 2020 webbleen. All rights reserved.
 //
 
-import UIKit
+struct LaunchRequestModel {
+    var build: String?
+    var channel: String?
+    var height: String?
+    var width: String?
+}
 
-struct LaunchModel: Decodable {
-    var startPages: String?
-    var data: String?
-    
-    init() {}
-    
-    enum CodingKeys: String, CodingKey {
-          case startPages = "startPages"
-          case data = "data"
-    }
-    
-    static func fromJSON(_ dictionary: [String: Any]?) -> LaunchModel? {
-      if let json = dictionary {
-        var cm = LaunchModel()
-        cm.startPages = json["startPages"] as? String
-        cm.data = json["data"] as? String
-        return cm
-      }
-      return nil
-    }
+struct LaunchResponseModel: Decodable {
+    var code: Int?
 }

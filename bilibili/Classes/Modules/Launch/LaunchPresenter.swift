@@ -7,7 +7,7 @@
 //
 
 import Foundation
-
+/*
 struct LaunchPresenter<U> where U: LaunchProtocol {
     
     var view: U?
@@ -22,7 +22,7 @@ struct LaunchPresenter<U> where U: LaunchProtocol {
     
     func getInfo() {
         let startRequest = LaunchRequest()
-        apiClient?.execute(request: startRequest) { (result: Result<ApiResponse<LaunchModel>>) in
+        apiClient?.execute(request: startRequest) { (result: Result<ApiResponse<LaunchResponseModel>>) in
             switch result {
             case let .success(response):
                 let msgID = response.entity.data
@@ -34,4 +34,38 @@ struct LaunchPresenter<U> where U: LaunchProtocol {
             }
         }
     }
+}
+*/
+
+class LaunchPresenter: BasePresenter, LaunchPresenterInput {
+    
+    private let launchRepository: LaunchRepositoryProtocol
+    
+    private var view: LaunchPresenterOutput?
+    
+    required init(view: LaunchPresenterOutput) {
+        self.launchRepository = LaunchRepository()
+        
+        self.view = view
+    }
+    
+    func getLaunchInfo(requestModel: LaunchRequestModel) {
+        /// TODO:
+        launchRepository.exec(requestModel: requestModel)
+        self.view?.launchSuccess()
+    }
+    func launchImageDidTap() {
+        /// TODO:
+        self.view?.launchSuccess()
+    }
+}
+
+protocol LaunchPresenterInput {
+    init(view: LaunchPresenterOutput)
+    func getLaunchInfo(requestModel: LaunchRequestModel)
+    func launchImageDidTap()
+}
+
+protocol LaunchPresenterOutput {
+    func launchSuccess()
 }

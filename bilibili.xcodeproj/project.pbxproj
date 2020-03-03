@@ -30,8 +30,15 @@
 		8A0D8B35240DFD2400FDAE81 /* LaunchPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A0D8B2F240DFD2400FDAE81 /* LaunchPresenter.swift */; };
 		8A0D8B36240DFD2400FDAE81 /* LaunchProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A0D8B30240DFD2400FDAE81 /* LaunchProtocol.swift */; };
 		8A0D8B37240DFD2400FDAE81 /* LaunchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A0D8B31240DFD2400FDAE81 /* LaunchView.swift */; };
-		8A0D8B38240DFD2400FDAE81 /* LaunchRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A0D8B32240DFD2400FDAE81 /* LaunchRequest.swift */; };
 		8A0D8B39240DFD2400FDAE81 /* LaunchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A0D8B33240DFD2400FDAE81 /* LaunchViewController.swift */; };
+		8A0D8B3C240E62EE00FDAE81 /* BasePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A0D8B3B240E62EE00FDAE81 /* BasePresenter.swift */; };
+		8A0D8B3E240E632200FDAE81 /* BaseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A0D8B3D240E632200FDAE81 /* BaseView.swift */; };
+		8A0D8B40240E66EA00FDAE81 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A0D8B3F240E66EA00FDAE81 /* BaseViewController.swift */; };
+		8A0D8B42240E675E00FDAE81 /* BaseParamObj.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A0D8B41240E675E00FDAE81 /* BaseParamObj.swift */; };
+		8A0D8B44240E6BA400FDAE81 /* LaunchViewDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A0D8B43240E6BA400FDAE81 /* LaunchViewDelegate.swift */; };
+		8A0D8B46240E74BE00FDAE81 /* LaunchParamObj.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A0D8B45240E74BE00FDAE81 /* LaunchParamObj.swift */; };
+		8A12010B240E85B2002E2A8E /* BaseRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A12010A240E85B2002E2A8E /* BaseRepository.swift */; };
+		8A12010D240E873C002E2A8E /* LaunchRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A12010C240E873C002E2A8E /* LaunchRepository.swift */; };
 		9D6D7BFDC720920788C289A9 /* Pods_bilibili.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FB45E8415A42089D7FA730F5 /* Pods_bilibili.framework */; };
 /* End PBXBuildFile section */
 
@@ -54,7 +61,7 @@
 
 /* Begin PBXFileReference section */
 		8206C74B065CFD503D9DDD1E /* Pods-bilibili.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-bilibili.debug.xcconfig"; path = "Target Support Files/Pods-bilibili/Pods-bilibili.debug.xcconfig"; sourceTree = "<group>"; };
-		8A0D8AD2240CB22400FDAE81 /* bilibili.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = bilibili.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		8A0D8AD2240CB22400FDAE81 /* 哔哩哔哩.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "哔哩哔哩.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		8A0D8AD5240CB22400FDAE81 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8A0D8AD7240CB22400FDAE81 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		8A0D8AD9240CB22400FDAE81 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -83,8 +90,15 @@
 		8A0D8B2F240DFD2400FDAE81 /* LaunchPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LaunchPresenter.swift; sourceTree = "<group>"; };
 		8A0D8B30240DFD2400FDAE81 /* LaunchProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LaunchProtocol.swift; sourceTree = "<group>"; };
 		8A0D8B31240DFD2400FDAE81 /* LaunchView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LaunchView.swift; sourceTree = "<group>"; };
-		8A0D8B32240DFD2400FDAE81 /* LaunchRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LaunchRequest.swift; sourceTree = "<group>"; };
 		8A0D8B33240DFD2400FDAE81 /* LaunchViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LaunchViewController.swift; sourceTree = "<group>"; };
+		8A0D8B3B240E62EE00FDAE81 /* BasePresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BasePresenter.swift; sourceTree = "<group>"; };
+		8A0D8B3D240E632200FDAE81 /* BaseView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseView.swift; sourceTree = "<group>"; };
+		8A0D8B3F240E66EA00FDAE81 /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
+		8A0D8B41240E675E00FDAE81 /* BaseParamObj.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseParamObj.swift; sourceTree = "<group>"; };
+		8A0D8B43240E6BA400FDAE81 /* LaunchViewDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchViewDelegate.swift; sourceTree = "<group>"; };
+		8A0D8B45240E74BE00FDAE81 /* LaunchParamObj.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchParamObj.swift; sourceTree = "<group>"; };
+		8A12010A240E85B2002E2A8E /* BaseRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseRepository.swift; sourceTree = "<group>"; };
+		8A12010C240E873C002E2A8E /* LaunchRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchRepository.swift; sourceTree = "<group>"; };
 		C33D1890A4844653C8AE2097 /* Pods-bilibili.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-bilibili.release.xcconfig"; path = "Target Support Files/Pods-bilibili/Pods-bilibili.release.xcconfig"; sourceTree = "<group>"; };
 		FB45E8415A42089D7FA730F5 /* Pods_bilibili.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_bilibili.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -147,7 +161,7 @@
 		8A0D8AD3240CB22400FDAE81 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				8A0D8AD2240CB22400FDAE81 /* bilibili.app */,
+				8A0D8AD2240CB22400FDAE81 /* 哔哩哔哩.app */,
 				8A0D8AE8240CB22800FDAE81 /* bilibiliTests.xctest */,
 				8A0D8AF3240CB22800FDAE81 /* bilibiliUITests.xctest */,
 			);
@@ -193,6 +207,7 @@
 				8A0D8B07240CFAF200FDAE81 /* Modules */,
 				8A0D8B0F240CFAF200FDAE81 /* Result.swift */,
 				8A0D8B0E240CFAF200FDAE81 /* Presenter.swift */,
+				8A0D8B3A240E625B00FDAE81 /* MVP */,
 				8A0D8B10240CFAF200FDAE81 /* API */,
 			);
 			path = Classes;
@@ -237,10 +252,24 @@
 				8A0D8B2F240DFD2400FDAE81 /* LaunchPresenter.swift */,
 				8A0D8B30240DFD2400FDAE81 /* LaunchProtocol.swift */,
 				8A0D8B31240DFD2400FDAE81 /* LaunchView.swift */,
-				8A0D8B32240DFD2400FDAE81 /* LaunchRequest.swift */,
 				8A0D8B33240DFD2400FDAE81 /* LaunchViewController.swift */,
+				8A0D8B43240E6BA400FDAE81 /* LaunchViewDelegate.swift */,
+				8A0D8B45240E74BE00FDAE81 /* LaunchParamObj.swift */,
+				8A12010C240E873C002E2A8E /* LaunchRepository.swift */,
 			);
 			path = Launch;
+			sourceTree = "<group>";
+		};
+		8A0D8B3A240E625B00FDAE81 /* MVP */ = {
+			isa = PBXGroup;
+			children = (
+				8A0D8B3B240E62EE00FDAE81 /* BasePresenter.swift */,
+				8A0D8B3D240E632200FDAE81 /* BaseView.swift */,
+				8A0D8B3F240E66EA00FDAE81 /* BaseViewController.swift */,
+				8A0D8B41240E675E00FDAE81 /* BaseParamObj.swift */,
+				8A12010A240E85B2002E2A8E /* BaseRepository.swift */,
+			);
+			path = MVP;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -262,7 +291,7 @@
 			);
 			name = bilibili;
 			productName = bilibili;
-			productReference = 8A0D8AD2240CB22400FDAE81 /* bilibili.app */;
+			productReference = 8A0D8AD2240CB22400FDAE81 /* 哔哩哔哩.app */;
 			productType = "com.apple.product-type.application";
 		};
 		8A0D8AE7240CB22800FDAE81 /* bilibiliTests */ = {
@@ -419,24 +448,31 @@
 			buildActionMask = 2147483647;
 			files = (
 				8A0D8B1C240CFAF200FDAE81 /* ApiClient.swift in Sources */,
+				8A0D8B3C240E62EE00FDAE81 /* BasePresenter.swift in Sources */,
 				8A0D8B36240DFD2400FDAE81 /* LaunchProtocol.swift in Sources */,
+				8A12010B240E85B2002E2A8E /* BaseRepository.swift in Sources */,
+				8A0D8B40240E66EA00FDAE81 /* BaseViewController.swift in Sources */,
+				8A0D8B42240E675E00FDAE81 /* BaseParamObj.swift in Sources */,
 				8A0D8B1A240CFAF200FDAE81 /* Presenter.swift in Sources */,
 				8A0D8B19240CFAF200FDAE81 /* CacheModel.swift in Sources */,
 				8A0D8B35240DFD2400FDAE81 /* LaunchPresenter.swift in Sources */,
 				8A0D8B1D240CFAF200FDAE81 /* JSON.swift in Sources */,
 				8A0D8ADA240CB22400FDAE81 /* ViewController.swift in Sources */,
 				8A0D8B37240DFD2400FDAE81 /* LaunchView.swift in Sources */,
+				8A0D8B44240E6BA400FDAE81 /* LaunchViewDelegate.swift in Sources */,
+				8A0D8B3E240E632200FDAE81 /* BaseView.swift in Sources */,
 				8A0D8B1E240CFAF200FDAE81 /* ApiResponse.swift in Sources */,
 				8A0D8B17240CFAF200FDAE81 /* CacheViewController.swift in Sources */,
 				8A0D8AD6240CB22400FDAE81 /* AppDelegate.swift in Sources */,
 				8A0D8B39240DFD2400FDAE81 /* LaunchViewController.swift in Sources */,
 				8A0D8B18240CFAF200FDAE81 /* CacheProtocol.swift in Sources */,
 				8A0D8B34240DFD2400FDAE81 /* LaunchModel.swift in Sources */,
+				8A12010D240E873C002E2A8E /* LaunchRepository.swift in Sources */,
 				8A0D8B1B240CFAF200FDAE81 /* Result.swift in Sources */,
 				8A0D8AD8240CB22400FDAE81 /* SceneDelegate.swift in Sources */,
 				8A0D8B15240CFAF200FDAE81 /* CachePresenter.swift in Sources */,
+				8A0D8B46240E74BE00FDAE81 /* LaunchParamObj.swift in Sources */,
 				8A0D8B1F240CFAF200FDAE81 /* ApiRequest.swift in Sources */,
-				8A0D8B38240DFD2400FDAE81 /* LaunchRequest.swift in Sources */,
 				8A0D8B16240CFAF200FDAE81 /* CacheRequest.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -618,7 +654,7 @@
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.webbleen.bilibili;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "哔哩哔哩";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;
 			};
@@ -636,7 +672,7 @@
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.webbleen.bilibili;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "哔哩哔哩";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;
 			};

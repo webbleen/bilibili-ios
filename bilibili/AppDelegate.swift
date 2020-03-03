@@ -15,12 +15,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
-        self.window = UIWindow(frame: UIScreen.main.bounds)
-        self.window?.backgroundColor = .white
-        let launchVC = LaunchViewController()
-        let navC = UINavigationController(rootViewController: launchVC)
-        self.window?.rootViewController = navC
-        self.window?.makeKeyAndVisible()
+        initRootUI()
         return true
     }
     
@@ -41,7 +36,23 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // If any sessions were discarded while the application was not running, this will be called shortly after application:didFinishLaunchingWithOptions.
         // Use this method to release any resources that were specific to the discarded scenes, as they will not return.
     }
-
-
 }
 
+extension AppDelegate {
+    
+    func initRootUI() {
+        /*
+        self.window = UIWindow.init(frame: UIScreen.main.bounds)
+        self.window?.backgroundColor = .white
+        
+        let launchVC = LaunchViewController()
+        launchVC.paramObj = LaunchParamObj(launchType: .normal)
+        //let navigationController = UINavigationController(rootViewController: launchVC)
+        self.window?.rootViewController = launchVC
+        
+        self.window?.makeKeyAndVisible()
+        
+        UINavigationBar.appearance().isTranslucent = false
+         */
+    }
+}
