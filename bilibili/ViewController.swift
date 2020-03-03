@@ -15,17 +15,8 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
-        self.window = UIWindow.init(frame: UIScreen.main.bounds)
-        self.window?.backgroundColor = .white
-        
-        let launchVC = LaunchViewController()
-        launchVC.paramObj = LaunchParamObj(launchType: .normal)
-        //let navigationController = UINavigationController(rootViewController: launchVC)
-        self.window?.rootViewController = launchVC
-        
-        self.window?.makeKeyAndVisible()
-        
-        UINavigationBar.appearance().isTranslucent = false
+        view.backgroundColor = UIColor.white
+        navigationItem.title = "哔哩哔哩"
     }
 }
 
