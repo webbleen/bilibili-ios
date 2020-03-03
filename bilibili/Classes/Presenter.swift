@@ -15,4 +15,4 @@ protocol Presenter {
 }
 
 extension CachePresenter: Presenter {}
-extension StartPresenter: Presenter {}
+extension LaunchPresenter: Presenter {}

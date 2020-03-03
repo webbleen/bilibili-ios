@@ -14,18 +14,7 @@
                     <view key="view" contentMode="scaleToFill" id="Ze5-6b-2t3">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="bilibili_splash_iphone_bg" translatesAutoresizingMaskIntoConstraints="NO" id="TEH-xF-fDb" userLabel="StartPage_Bg">
-                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
-                            </imageView>
-                        </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
-                        <constraints>
-                            <constraint firstItem="TEH-xF-fDb" firstAttribute="top" secondItem="Ze5-6b-2t3" secondAttribute="topMargin" id="04l-Cq-mw2"/>
-                            <constraint firstItem="TEH-xF-fDb" firstAttribute="trailing" secondItem="Ze5-6b-2t3" secondAttribute="trailing" id="0bF-Ee-Nw1"/>
-                            <constraint firstItem="TEH-xF-fDb" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="3GH-J3-I3v"/>
-                            <constraint firstItem="TEH-xF-fDb" firstAttribute="bottom" secondItem="Ze5-6b-2t3" secondAttribute="bottom" id="XJT-lZ-sBa"/>
-                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                 </viewController>
@@ -34,7 +23,4 @@
             <point key="canvasLocation" x="53" y="375"/>
         </scene>
     </scenes>
-    <resources>
-        <image name="bilibili_splash_iphone_bg" width="320" height="568"/>
-    </resources>
 </document>

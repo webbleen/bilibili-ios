@@ -1,5 +1,5 @@
 //
-//  StartRequest.swift
+//  LaunchRequest.swift
 //  bilibili
 //
 //  Created by IB投信 on 3/2/20.
@@ -9,7 +9,7 @@
 import Foundation
 import UIKit
 
-struct StartRequest: ApiRequest {
+struct LaunchRequest: ApiRequest {
     
     var urlRequest: URLRequest {
         let width = UIScreen.main.bounds.width

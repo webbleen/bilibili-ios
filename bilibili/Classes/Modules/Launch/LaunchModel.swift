@@ -1,5 +1,5 @@
 //
-//  StartInfoModel.swift
+//  LaunchModel.swift
 //  bilibili
 //
 //  Created by IB投信 on 3/2/20.
@@ -8,20 +8,20 @@
 
 import UIKit
 
-struct StartInfoModel: Decodable {
+struct LaunchModel: Decodable {
     var startPages: String?
     var data: String?
     
     init() {}
     
     enum CodingKeys: String, CodingKey {
-        case msgID = "startPages"
-        case data = "data"
+          case startPages = "startPages"
+          case data = "data"
     }
     
-    static func fromJSON(_ dictionary: [String: Any]?) -> StartInfoModel? {
+    static func fromJSON(_ dictionary: [String: Any]?) -> LaunchModel? {
       if let json = dictionary {
-        var cm = StartInfoModel()
+        var cm = LaunchModel()
         cm.startPages = json["startPages"] as? String
         cm.data = json["data"] as? String
         return cm

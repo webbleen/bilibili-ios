@@ -1,5 +1,5 @@
 //
-//  StartPresenter.swift
+//  LaunchPresenter.swift
 //  bilibili
 //
 //  Created by IB投信 on 3/2/20.
@@ -8,7 +8,7 @@
 
 import Foundation
 
-struct StartPresenter<U> where U: StartProtocol {
+struct LaunchPresenter<U> where U: LaunchProtocol {
     
     var view: U?
     var apiClient: ApiClient?
@@ -21,11 +21,11 @@ struct StartPresenter<U> where U: StartProtocol {
     init() { }
     
     func getInfo() {
-        let startRequest = StartRequest()
-        apiClient?.execute(request: startRequest) { (result: Result<ApiResponse<StartInfoModel>>) in
+        let startRequest = LaunchRequest()
+        apiClient?.execute(request: startRequest) { (result: Result<ApiResponse<LaunchModel>>) in
             switch result {
             case let .success(response):
-                let msgID = response.entity.msgID
+                let msgID = response.entity.data
                 print(msgID ?? "")
                 //completionHandler(.success(url))
             case let .failure(error):

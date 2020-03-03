@@ -1,5 +1,5 @@
 //
-//  StartViewController.swift
+//  LaunchViewController.swift
 //  bilibili
 //
 //  Created by IB投信 on 3/2/20.
@@ -8,14 +8,21 @@
 
 import UIKit
 
-class StartViewController: UIViewController {
-    
-    private var startPresenter = StartPresenter<StartViewController>()
+class LaunchViewController: UIViewController {
+   
+    lazy private var presenter: LaunchPresenter = {
+        return LaunchPresenter<LaunchViewController>()
+    }()
+   
+    lazy private var launchView: LaunchView = {
+        let launchView = LaunchView(frame: self.view.frame)
+        return launchView
+    }()
     
     override init(nibName nibNameOrNil: String?, bundle nibBundleOrNil: Bundle?) {
         super.init(nibName: nil, bundle: nil)
         
-        self.startPresenter.initial(self)
+        self.presenter.initial(self)
     }
     
     required init?(coder: NSCoder) {
@@ -26,11 +33,12 @@ class StartViewController: UIViewController {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
-        getStartInfo()
+        //getLaunchInfo()
+        view = launchView
     }
 
-    func getStartInfo() -> Void {
-        self.startPresenter.getInfo()
+    func getLaunchInfo() -> Void {
+        self.presenter.getInfo()
     }
 
     /*
@@ -46,8 +54,8 @@ class StartViewController: UIViewController {
 }
 
 
-extension StartViewController: StartProtocol {
-    func onGetCacheSuccess(model: StartInfoModel?) {
+extension LaunchViewController: LaunchProtocol {
+    func onGetCacheSuccess(model: LaunchModel?) {
         print("CacheViewController:onGetCacheSuccess")
     }
     

@@ -11,11 +11,21 @@ import UIKit
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
-
+    var window: UIWindow?
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
+        self.window = UIWindow(frame: UIScreen.main.bounds)
+        self.window?.backgroundColor = .white
+        let launchVC = LaunchViewController()
+        let navC = UINavigationController(rootViewController: launchVC)
+        self.window?.rootViewController = navC
+        self.window?.makeKeyAndVisible()
         return true
+    }
+    
+    func applicationDidBecomeActive(_ application: UIApplication) {
+        NotificationCenter.default.post(name: Notification.Name(rawValue: "appBecomeActive"), object: nil)
     }
 
     // MARK: UISceneSession Lifecycle

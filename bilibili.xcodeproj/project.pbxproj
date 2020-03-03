@@ -26,12 +26,12 @@
 		8A0D8B1D240CFAF200FDAE81 /* JSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A0D8B12240CFAF200FDAE81 /* JSON.swift */; };
 		8A0D8B1E240CFAF200FDAE81 /* ApiResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A0D8B13240CFAF200FDAE81 /* ApiResponse.swift */; };
 		8A0D8B1F240CFAF200FDAE81 /* ApiRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A0D8B14240CFAF200FDAE81 /* ApiRequest.swift */; };
-		8A0D8B22240CFD9500FDAE81 /* StartInfoModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A0D8B21240CFD9500FDAE81 /* StartInfoModel.swift */; };
-		8A0D8B24240D010400FDAE81 /* StartProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A0D8B23240D010400FDAE81 /* StartProtocol.swift */; };
-		8A0D8B26240D016300FDAE81 /* StartRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A0D8B25240D016300FDAE81 /* StartRequest.swift */; };
-		8A0D8B28240D069200FDAE81 /* StartPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A0D8B27240D069200FDAE81 /* StartPresenter.swift */; };
-		8A0D8B2A240D08C300FDAE81 /* StartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A0D8B29240D08C300FDAE81 /* StartViewController.swift */; };
-		8A0D8B2C240D12FC00FDAE81 /* StartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A0D8B2B240D12FC00FDAE81 /* StartView.swift */; };
+		8A0D8B34240DFD2400FDAE81 /* LaunchModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A0D8B2E240DFD2400FDAE81 /* LaunchModel.swift */; };
+		8A0D8B35240DFD2400FDAE81 /* LaunchPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A0D8B2F240DFD2400FDAE81 /* LaunchPresenter.swift */; };
+		8A0D8B36240DFD2400FDAE81 /* LaunchProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A0D8B30240DFD2400FDAE81 /* LaunchProtocol.swift */; };
+		8A0D8B37240DFD2400FDAE81 /* LaunchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A0D8B31240DFD2400FDAE81 /* LaunchView.swift */; };
+		8A0D8B38240DFD2400FDAE81 /* LaunchRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A0D8B32240DFD2400FDAE81 /* LaunchRequest.swift */; };
+		8A0D8B39240DFD2400FDAE81 /* LaunchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A0D8B33240DFD2400FDAE81 /* LaunchViewController.swift */; };
 		9D6D7BFDC720920788C289A9 /* Pods_bilibili.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FB45E8415A42089D7FA730F5 /* Pods_bilibili.framework */; };
 /* End PBXBuildFile section */
 
@@ -79,12 +79,12 @@
 		8A0D8B12240CFAF200FDAE81 /* JSON.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JSON.swift; sourceTree = "<group>"; };
 		8A0D8B13240CFAF200FDAE81 /* ApiResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ApiResponse.swift; sourceTree = "<group>"; };
 		8A0D8B14240CFAF200FDAE81 /* ApiRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ApiRequest.swift; sourceTree = "<group>"; };
-		8A0D8B21240CFD9500FDAE81 /* StartInfoModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartInfoModel.swift; sourceTree = "<group>"; };
-		8A0D8B23240D010400FDAE81 /* StartProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartProtocol.swift; sourceTree = "<group>"; };
-		8A0D8B25240D016300FDAE81 /* StartRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartRequest.swift; sourceTree = "<group>"; };
-		8A0D8B27240D069200FDAE81 /* StartPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartPresenter.swift; sourceTree = "<group>"; };
-		8A0D8B29240D08C300FDAE81 /* StartViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartViewController.swift; sourceTree = "<group>"; };
-		8A0D8B2B240D12FC00FDAE81 /* StartView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartView.swift; sourceTree = "<group>"; };
+		8A0D8B2E240DFD2400FDAE81 /* LaunchModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LaunchModel.swift; sourceTree = "<group>"; };
+		8A0D8B2F240DFD2400FDAE81 /* LaunchPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LaunchPresenter.swift; sourceTree = "<group>"; };
+		8A0D8B30240DFD2400FDAE81 /* LaunchProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LaunchProtocol.swift; sourceTree = "<group>"; };
+		8A0D8B31240DFD2400FDAE81 /* LaunchView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LaunchView.swift; sourceTree = "<group>"; };
+		8A0D8B32240DFD2400FDAE81 /* LaunchRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LaunchRequest.swift; sourceTree = "<group>"; };
+		8A0D8B33240DFD2400FDAE81 /* LaunchViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LaunchViewController.swift; sourceTree = "<group>"; };
 		C33D1890A4844653C8AE2097 /* Pods-bilibili.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-bilibili.release.xcconfig"; path = "Target Support Files/Pods-bilibili/Pods-bilibili.release.xcconfig"; sourceTree = "<group>"; };
 		FB45E8415A42089D7FA730F5 /* Pods_bilibili.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_bilibili.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -192,6 +192,7 @@
 			children = (
 				8A0D8B07240CFAF200FDAE81 /* Modules */,
 				8A0D8B0F240CFAF200FDAE81 /* Result.swift */,
+				8A0D8B0E240CFAF200FDAE81 /* Presenter.swift */,
 				8A0D8B10240CFAF200FDAE81 /* API */,
 			);
 			path = Classes;
@@ -200,9 +201,8 @@
 		8A0D8B07240CFAF200FDAE81 /* Modules */ = {
 			isa = PBXGroup;
 			children = (
-				8A0D8B20240CFCBF00FDAE81 /* Start */,
 				8A0D8B08240CFAF200FDAE81 /* Cache */,
-				8A0D8B0E240CFAF200FDAE81 /* Presenter.swift */,
+				8A0D8B2D240DFD2400FDAE81 /* Launch */,
 			);
 			path = Modules;
 			sourceTree = "<group>";
@@ -230,17 +230,17 @@
 			path = API;
 			sourceTree = "<group>";
 		};
-		8A0D8B20240CFCBF00FDAE81 /* Start */ = {
+		8A0D8B2D240DFD2400FDAE81 /* Launch */ = {
 			isa = PBXGroup;
 			children = (
-				8A0D8B21240CFD9500FDAE81 /* StartInfoModel.swift */,
-				8A0D8B23240D010400FDAE81 /* StartProtocol.swift */,
-				8A0D8B25240D016300FDAE81 /* StartRequest.swift */,
-				8A0D8B27240D069200FDAE81 /* StartPresenter.swift */,
-				8A0D8B29240D08C300FDAE81 /* StartViewController.swift */,
-				8A0D8B2B240D12FC00FDAE81 /* StartView.swift */,
+				8A0D8B2E240DFD2400FDAE81 /* LaunchModel.swift */,
+				8A0D8B2F240DFD2400FDAE81 /* LaunchPresenter.swift */,
+				8A0D8B30240DFD2400FDAE81 /* LaunchProtocol.swift */,
+				8A0D8B31240DFD2400FDAE81 /* LaunchView.swift */,
+				8A0D8B32240DFD2400FDAE81 /* LaunchRequest.swift */,
+				8A0D8B33240DFD2400FDAE81 /* LaunchViewController.swift */,
 			);
-			path = Start;
+			path = Launch;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -419,25 +419,25 @@
 			buildActionMask = 2147483647;
 			files = (
 				8A0D8B1C240CFAF200FDAE81 /* ApiClient.swift in Sources */,
+				8A0D8B36240DFD2400FDAE81 /* LaunchProtocol.swift in Sources */,
 				8A0D8B1A240CFAF200FDAE81 /* Presenter.swift in Sources */,
-				8A0D8B26240D016300FDAE81 /* StartRequest.swift in Sources */,
 				8A0D8B19240CFAF200FDAE81 /* CacheModel.swift in Sources */,
+				8A0D8B35240DFD2400FDAE81 /* LaunchPresenter.swift in Sources */,
 				8A0D8B1D240CFAF200FDAE81 /* JSON.swift in Sources */,
 				8A0D8ADA240CB22400FDAE81 /* ViewController.swift in Sources */,
+				8A0D8B37240DFD2400FDAE81 /* LaunchView.swift in Sources */,
 				8A0D8B1E240CFAF200FDAE81 /* ApiResponse.swift in Sources */,
 				8A0D8B17240CFAF200FDAE81 /* CacheViewController.swift in Sources */,
 				8A0D8AD6240CB22400FDAE81 /* AppDelegate.swift in Sources */,
+				8A0D8B39240DFD2400FDAE81 /* LaunchViewController.swift in Sources */,
 				8A0D8B18240CFAF200FDAE81 /* CacheProtocol.swift in Sources */,
+				8A0D8B34240DFD2400FDAE81 /* LaunchModel.swift in Sources */,
 				8A0D8B1B240CFAF200FDAE81 /* Result.swift in Sources */,
-				8A0D8B2C240D12FC00FDAE81 /* StartView.swift in Sources */,
-				8A0D8B22240CFD9500FDAE81 /* StartInfoModel.swift in Sources */,
 				8A0D8AD8240CB22400FDAE81 /* SceneDelegate.swift in Sources */,
 				8A0D8B15240CFAF200FDAE81 /* CachePresenter.swift in Sources */,
-				8A0D8B2A240D08C300FDAE81 /* StartViewController.swift in Sources */,
 				8A0D8B1F240CFAF200FDAE81 /* ApiRequest.swift in Sources */,
-				8A0D8B24240D010400FDAE81 /* StartProtocol.swift in Sources */,
+				8A0D8B38240DFD2400FDAE81 /* LaunchRequest.swift in Sources */,
 				8A0D8B16240CFAF200FDAE81 /* CacheRequest.swift in Sources */,
-				8A0D8B28240D069200FDAE81 /* StartPresenter.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

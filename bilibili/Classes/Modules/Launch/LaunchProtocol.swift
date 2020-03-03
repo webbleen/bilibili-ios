@@ -1,5 +1,5 @@
 //
-//  StartProtocol.swift
+//  LaunchProtocol.swift
 //  bilibili
 //
 //  Created by IB投信 on 3/2/20.
@@ -8,7 +8,7 @@
 
 import Foundation
 
-protocol StartProtocol {
-    func onGetCacheSuccess(model: StartInfoModel?)
+protocol LaunchProtocol {
+    func onGetCacheSuccess(model: LaunchModel?)
     func onGetCacheFailure(error: Error)
 }
