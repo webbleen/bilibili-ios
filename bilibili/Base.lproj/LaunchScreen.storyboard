@@ -16,12 +16,23 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="bilibili_splash_iphone_bg" translatesAutoresizingMaskIntoConstraints="NO" id="mVa-M2-XXu">
-                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="launcher_default_2019" translatesAutoresizingMaskIntoConstraints="NO" id="mVa-M2-XXu">
+                                <rect key="frame" x="0.0" y="44" width="414" height="818"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="launcher_copyright_2019" translatesAutoresizingMaskIntoConstraints="NO" id="stU-Yb-b11">
+                                <rect key="frame" x="87" y="742" width="240" height="120"/>
                             </imageView>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="mVa-M2-XXu" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="1R0-Q0-Gz5"/>
+                            <constraint firstItem="mVa-M2-XXu" firstAttribute="bottom" secondItem="stU-Yb-b11" secondAttribute="bottom" id="Bva-R8-CFv"/>
+                            <constraint firstItem="mVa-M2-XXu" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="EHh-oT-SlO"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="stU-Yb-b11" secondAttribute="bottom" id="SdM-6A-wk5"/>
+                            <constraint firstItem="mVa-M2-XXu" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="lHv-zX-LpJ"/>
+                            <constraint firstItem="stU-Yb-b11" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="lql-es-EVL"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="mVa-M2-XXu" secondAttribute="trailing" id="y7p-xa-aI7"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                 </viewController>
@@ -31,6 +42,7 @@
         </scene>
     </scenes>
     <resources>
-        <image name="bilibili_splash_iphone_bg" width="320" height="568"/>
+        <image name="launcher_copyright_2019" width="240" height="120"/>
+        <image name="launcher_default_2019" width="320" height="520"/>
     </resources>
 </document>

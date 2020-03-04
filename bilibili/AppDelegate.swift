@@ -2,7 +2,7 @@
 //  AppDelegate.swift
 //  bilibili
 //
-//  Created by IB投信 on 3/2/20.
+//  Created by WENBIN.LI on 3/2/20.
 //  Copyright © 2020 webbleen. All rights reserved.
 //
 
@@ -31,8 +31,8 @@ extension AppDelegate {
         window?.backgroundColor = UIColor.white
         let launchVC = LaunchViewController()
         launchVC.paramObj = LaunchParamObj(launchType: .normal)
-        let nav = UINavigationController(rootViewController: launchVC)
-        window?.rootViewController = nav
+        // let nav = UINavigationController(rootViewController: launchVC)
+        window?.rootViewController = launchVC
         
         window?.makeKeyAndVisible()
     }

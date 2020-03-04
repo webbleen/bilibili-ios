@@ -2,7 +2,7 @@
 //  bilibiliUITests.swift
 //  bilibiliUITests
 //
-//  Created by IB投信 on 3/2/20.
+//  Created by WENBIN.LI on 3/2/20.
 //  Copyright © 2020 webbleen. All rights reserved.
 //
 

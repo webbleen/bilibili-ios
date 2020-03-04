@@ -198,9 +198,9 @@
 		8A0D8B06240CFAF200FDAE81 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
-				8A0D8B07240CFAF200FDAE81 /* Modules */,
 				8A0D8B0F240CFAF200FDAE81 /* Result.swift */,
 				8A0D8B0E240CFAF200FDAE81 /* Presenter.swift */,
+				8A0D8B07240CFAF200FDAE81 /* Modules */,
 				8A0D8B3A240E625B00FDAE81 /* MVP */,
 				8A0D8B10240CFAF200FDAE81 /* API */,
 			);
@@ -632,16 +632,18 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 8470;
 				INFOPLIST_FILE = bilibili/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				MARKETING_VERSION = 5.40.1;
 				PRODUCT_BUNDLE_IDENTIFIER = com.webbleen.bilibili;
 				PRODUCT_NAME = "哔哩哔哩";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = 1;
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
@@ -651,16 +653,18 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 8470;
 				INFOPLIST_FILE = bilibili/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				MARKETING_VERSION = 5.40.1;
 				PRODUCT_BUNDLE_IDENTIFIER = com.webbleen.bilibili;
 				PRODUCT_NAME = "哔哩哔哩";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = 1;
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
 		};

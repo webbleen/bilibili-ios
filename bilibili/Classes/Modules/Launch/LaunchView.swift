@@ -2,7 +2,7 @@
 //  LaunchView.swift
 //  bilibili
 //
-//  Created by IB投信 on 3/2/20.
+//  Created by WENBIN.LI on 3/2/20.
 //  Copyright © 2020 webbleen. All rights reserved.
 //
 
@@ -19,7 +19,7 @@ class LaunchView: BaseView {
     weak var delegate: LaunchViewDelegate?
     
     var timer: Timer!
-    var interval: Int = 5
+    var interval: Int = 10
     
     lazy var imageView: UIImageView = {
         let imageView = UIImageView()
@@ -43,7 +43,6 @@ class LaunchView: BaseView {
     }()
     
     override init(frame: CGRect) {
-        print("LaunchView.init")
         super.init(frame: frame)
         setupUI()
     }
@@ -71,7 +70,7 @@ class LaunchView: BaseView {
         
         addSubview(skipButton)
         skipButton.snp.makeConstraints { (make) in
-            make.top.equalToSuperview().offset(30)
+            make.top.equalToSuperview().offset(50)
             make.right.equalToSuperview().offset(-25)
             make.size.equalTo(CGSize(width: 80, height: 30))
         }
@@ -86,7 +85,6 @@ class LaunchView: BaseView {
     }
     
     @objc private func timerInterval() {
-        print("LaunchView.timerInterval:Skip \(interval)s")
         interval -= 1
         if interval <= 0 {
             interval = 0
@@ -97,7 +95,6 @@ class LaunchView: BaseView {
     }
     
     @objc private func imageTouchAction() {
-        print("LaunchView.imageTouchAction")
         delegate?.launchImageDidTap()
         dismiss()
     }
@@ -117,7 +114,6 @@ class LaunchView: BaseView {
     }
     
     deinit {
-        print("LaunchView.deinit")
         NotificationCenter.default.removeObserver(self)
     }
 }
