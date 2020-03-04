@@ -73,15 +73,6 @@ class LaunchViewController: BaseViewController {
 }
 
 
-extension LaunchViewController: LaunchProtocol {
-    func onGetCacheSuccess(model: LaunchResponseModel?) {
-        print("LaunchViewController:onGetCacheSuccess")
-    }
-    
-    func onGetCacheFailure(error: Error) {
-        print("LaunchViewController:onGetCacheFailure")
-    }
-}
 
 extension LaunchViewController: LaunchViewDelegate {
     func launchImageDidTap() {
