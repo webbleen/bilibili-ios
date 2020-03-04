@@ -14,5 +14,6 @@ struct LaunchRequestModel {
 }
 
 struct LaunchResponseModel: Decodable {
-    var code: Int?
+    var code:Int?
+    var message:String?
 }

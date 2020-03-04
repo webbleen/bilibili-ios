@@ -28,7 +28,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 extension AppDelegate {
     func initRootUI() {
         window = UIWindow.init(frame: UIScreen.main.bounds)
-        window?.backgroundColor = UIColor.white
+        window?.backgroundColor = .white
         let launchVC = LaunchViewController()
         launchVC.paramObj = LaunchParamObj(launchType: .normal)
         // let nav = UINavigationController(rootViewController: launchVC)

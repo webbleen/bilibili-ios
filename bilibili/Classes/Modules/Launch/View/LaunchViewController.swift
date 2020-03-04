@@ -16,6 +16,8 @@ class LaunchViewController: BaseViewController {
    
     lazy private var launchView: LaunchView = {
         let launchView = LaunchView(frame: self.view.frame)
+        launchView.delegate = self
+        
         return launchView
     }()
 
@@ -59,17 +61,6 @@ class LaunchViewController: BaseViewController {
     func getLaunchInfo(requestModel: LaunchRequestModel) -> Void {
         self.presenter.getLaunchInfo(requestModel: requestModel)
     }
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */
-
 }
 
 
@@ -79,10 +70,18 @@ extension LaunchViewController: LaunchViewDelegate {
         print("LaunchViewController:launchImageDidTap")
         self.presenter.launchImageDidTap()
     }
+    func launchImageDismiss() {
+        print("LaunchViewController:launchImageDismiss")
+        self.dismiss(animated: true, completion: nil)
+        
+        let tabBarVC = TabBarViewController()
+        let nav = UINavigationController(rootViewController: tabBarVC)
+        self.present(nav, animated: true, completion: nil)
+    }
 }
 
 extension LaunchViewController: LaunchPresenterOutput {
     func launchSuccess() {
-        print("LaunchViewController:launchSuccess")
+        
     }
 }

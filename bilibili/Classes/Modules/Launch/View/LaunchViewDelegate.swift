@@ -10,4 +10,5 @@ import Foundation
 
 @objc protocol LaunchViewDelegate {
     func launchImageDidTap()
+    func launchImageDismiss()
 }

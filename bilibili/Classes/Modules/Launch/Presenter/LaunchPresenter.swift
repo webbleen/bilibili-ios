@@ -21,9 +21,13 @@ class LaunchPresenter: BasePresenter, LaunchPresenterInput {
     }
     
     func getLaunchInfo(requestModel: LaunchRequestModel) {
-        /// TODO:
-        launchRepository.exec(requestModel: requestModel)
-        self.view?.launchSuccess()
+        launchRepository.execute(requestModel: requestModel, onSuccess: { responseModel in
+            print("getLaunchInfo StatusCode:\(responseModel.code ?? 999 )")
+            self.view?.launchSuccess()
+        }) { error in
+            print("getLaunchInfo error:\(error.localizedDescription)")
+            self.view?.launchSuccess()
+        }
     }
     func launchImageDidTap() {
         /// TODO:

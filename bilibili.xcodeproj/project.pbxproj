@@ -28,6 +28,12 @@
 		8A0D8B42240E675E00FDAE81 /* BaseParamObj.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A0D8B41240E675E00FDAE81 /* BaseParamObj.swift */; };
 		8A0D8B44240E6BA400FDAE81 /* LaunchViewDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A0D8B43240E6BA400FDAE81 /* LaunchViewDelegate.swift */; };
 		8A0D8B46240E74BE00FDAE81 /* LaunchParamObj.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A0D8B45240E74BE00FDAE81 /* LaunchParamObj.swift */; };
+		8A0EFECE240FC47200430DD4 /* TabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A0EFECD240FC47200430DD4 /* TabBarViewController.swift */; };
+		8A0EFEE8240FC6CE00430DD4 /* VipViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A0EFED3240FC6CE00430DD4 /* VipViewController.swift */; };
+		8A0EFEE9240FC6CE00430DD4 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A0EFED8240FC6CE00430DD4 /* HomeViewController.swift */; };
+		8A0EFEEA240FC6CE00430DD4 /* ChannelViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A0EFEDD240FC6CE00430DD4 /* ChannelViewController.swift */; };
+		8A0EFEEB240FC6CE00430DD4 /* MineViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A0EFEE2240FC6CE00430DD4 /* MineViewController.swift */; };
+		8A0EFEEC240FC6CE00430DD4 /* DynamicViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A0EFEE7240FC6CE00430DD4 /* DynamicViewController.swift */; };
 		8A12010B240E85B2002E2A8E /* BaseRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A12010A240E85B2002E2A8E /* BaseRepository.swift */; };
 		8A12010D240E873C002E2A8E /* LaunchRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A12010C240E873C002E2A8E /* LaunchRepository.swift */; };
 		9D6D7BFDC720920788C289A9 /* Pods_bilibili.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FB45E8415A42089D7FA730F5 /* Pods_bilibili.framework */; };
@@ -79,6 +85,12 @@
 		8A0D8B41240E675E00FDAE81 /* BaseParamObj.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseParamObj.swift; sourceTree = "<group>"; };
 		8A0D8B43240E6BA400FDAE81 /* LaunchViewDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchViewDelegate.swift; sourceTree = "<group>"; };
 		8A0D8B45240E74BE00FDAE81 /* LaunchParamObj.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchParamObj.swift; sourceTree = "<group>"; };
+		8A0EFECD240FC47200430DD4 /* TabBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarViewController.swift; sourceTree = "<group>"; };
+		8A0EFED3240FC6CE00430DD4 /* VipViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VipViewController.swift; sourceTree = "<group>"; };
+		8A0EFED8240FC6CE00430DD4 /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		8A0EFEDD240FC6CE00430DD4 /* ChannelViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChannelViewController.swift; sourceTree = "<group>"; };
+		8A0EFEE2240FC6CE00430DD4 /* MineViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MineViewController.swift; sourceTree = "<group>"; };
+		8A0EFEE7240FC6CE00430DD4 /* DynamicViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DynamicViewController.swift; sourceTree = "<group>"; };
 		8A12010A240E85B2002E2A8E /* BaseRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseRepository.swift; sourceTree = "<group>"; };
 		8A12010C240E873C002E2A8E /* LaunchRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchRepository.swift; sourceTree = "<group>"; };
 		C33D1890A4844653C8AE2097 /* Pods-bilibili.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-bilibili.release.xcconfig"; path = "Target Support Files/Pods-bilibili/Pods-bilibili.release.xcconfig"; sourceTree = "<group>"; };
@@ -196,6 +208,12 @@
 			isa = PBXGroup;
 			children = (
 				8A0D8B2D240DFD2400FDAE81 /* Launch */,
+				8A0EFEC9240FC40F00430DD4 /* TabBar */,
+				8A0EFED4240FC6CE00430DD4 /* Home */,
+				8A0EFED9240FC6CE00430DD4 /* Channel */,
+				8A0EFEE3240FC6CE00430DD4 /* Dynamic */,
+				8A0EFECF240FC6CE00430DD4 /* Vip */,
+				8A0EFEDE240FC6CE00430DD4 /* Mine */,
 			);
 			path = Modules;
 			sourceTree = "<group>";
@@ -259,6 +277,198 @@
 				8A0D8B2F240DFD2400FDAE81 /* LaunchPresenter.swift */,
 			);
 			path = Presenter;
+			sourceTree = "<group>";
+		};
+		8A0EFEC9240FC40F00430DD4 /* TabBar */ = {
+			isa = PBXGroup;
+			children = (
+				8A0EFECA240FC42F00430DD4 /* Model */,
+				8A0EFECB240FC43600430DD4 /* View */,
+				8A0EFECC240FC44100430DD4 /* Presenter */,
+			);
+			path = TabBar;
+			sourceTree = "<group>";
+		};
+		8A0EFECA240FC42F00430DD4 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		8A0EFECB240FC43600430DD4 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				8A0EFECD240FC47200430DD4 /* TabBarViewController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		8A0EFECC240FC44100430DD4 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		8A0EFECF240FC6CE00430DD4 /* Vip */ = {
+			isa = PBXGroup;
+			children = (
+				8A0EFED0240FC6CE00430DD4 /* Presenter */,
+				8A0EFED1240FC6CE00430DD4 /* Model */,
+				8A0EFED2240FC6CE00430DD4 /* View */,
+			);
+			path = Vip;
+			sourceTree = "<group>";
+		};
+		8A0EFED0240FC6CE00430DD4 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		8A0EFED1240FC6CE00430DD4 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		8A0EFED2240FC6CE00430DD4 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				8A0EFED3240FC6CE00430DD4 /* VipViewController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		8A0EFED4240FC6CE00430DD4 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				8A0EFED5240FC6CE00430DD4 /* Presenter */,
+				8A0EFED6240FC6CE00430DD4 /* Model */,
+				8A0EFED7240FC6CE00430DD4 /* View */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		8A0EFED5240FC6CE00430DD4 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		8A0EFED6240FC6CE00430DD4 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		8A0EFED7240FC6CE00430DD4 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				8A0EFED8240FC6CE00430DD4 /* HomeViewController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		8A0EFED9240FC6CE00430DD4 /* Channel */ = {
+			isa = PBXGroup;
+			children = (
+				8A0EFEDA240FC6CE00430DD4 /* Presenter */,
+				8A0EFEDB240FC6CE00430DD4 /* Model */,
+				8A0EFEDC240FC6CE00430DD4 /* View */,
+			);
+			path = Channel;
+			sourceTree = "<group>";
+		};
+		8A0EFEDA240FC6CE00430DD4 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		8A0EFEDB240FC6CE00430DD4 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		8A0EFEDC240FC6CE00430DD4 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				8A0EFEDD240FC6CE00430DD4 /* ChannelViewController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		8A0EFEDE240FC6CE00430DD4 /* Mine */ = {
+			isa = PBXGroup;
+			children = (
+				8A0EFEDF240FC6CE00430DD4 /* Presenter */,
+				8A0EFEE0240FC6CE00430DD4 /* Model */,
+				8A0EFEE1240FC6CE00430DD4 /* View */,
+			);
+			path = Mine;
+			sourceTree = "<group>";
+		};
+		8A0EFEDF240FC6CE00430DD4 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		8A0EFEE0240FC6CE00430DD4 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		8A0EFEE1240FC6CE00430DD4 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				8A0EFEE2240FC6CE00430DD4 /* MineViewController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		8A0EFEE3240FC6CE00430DD4 /* Dynamic */ = {
+			isa = PBXGroup;
+			children = (
+				8A0EFEE4240FC6CE00430DD4 /* Presenter */,
+				8A0EFEE5240FC6CE00430DD4 /* Model */,
+				8A0EFEE6240FC6CE00430DD4 /* View */,
+			);
+			path = Dynamic;
+			sourceTree = "<group>";
+		};
+		8A0EFEE4240FC6CE00430DD4 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		8A0EFEE5240FC6CE00430DD4 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		8A0EFEE6240FC6CE00430DD4 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				8A0EFEE7240FC6CE00430DD4 /* DynamicViewController.swift */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -435,14 +645,20 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8A0EFEEC240FC6CE00430DD4 /* DynamicViewController.swift in Sources */,
 				8A0D8B1C240CFAF200FDAE81 /* ApiClient.swift in Sources */,
 				8A0D8B3C240E62EE00FDAE81 /* BasePresenter.swift in Sources */,
 				8A12010B240E85B2002E2A8E /* BaseRepository.swift in Sources */,
 				8A0D8B40240E66EA00FDAE81 /* BaseViewController.swift in Sources */,
+				8A0EFEEA240FC6CE00430DD4 /* ChannelViewController.swift in Sources */,
+				8A0EFEE8240FC6CE00430DD4 /* VipViewController.swift in Sources */,
 				8A0D8B42240E675E00FDAE81 /* BaseParamObj.swift in Sources */,
 				8A0D8B35240DFD2400FDAE81 /* LaunchPresenter.swift in Sources */,
+				8A0EFEE9240FC6CE00430DD4 /* HomeViewController.swift in Sources */,
 				8A0D8B1D240CFAF200FDAE81 /* JSON.swift in Sources */,
 				8A0D8ADA240CB22400FDAE81 /* ViewController.swift in Sources */,
+				8A0EFEEB240FC6CE00430DD4 /* MineViewController.swift in Sources */,
+				8A0EFECE240FC47200430DD4 /* TabBarViewController.swift in Sources */,
 				8A0D8B37240DFD2400FDAE81 /* LaunchView.swift in Sources */,
 				8A0D8B44240E6BA400FDAE81 /* LaunchViewDelegate.swift in Sources */,
 				8A0D8B3E240E632200FDAE81 /* BaseView.swift in Sources */,

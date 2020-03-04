@@ -111,6 +111,7 @@ class LaunchView: BaseView {
         }, completion: { Bool in
             self.removeFromSuperview()
         })
+        delegate?.launchImageDismiss()
     }
     
     deinit {

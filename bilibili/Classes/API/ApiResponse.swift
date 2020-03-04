@@ -61,7 +61,7 @@ struct VoidResponse: Decodable { }
 
 extension NSError {
     static func createParseError() -> NSError {
-        return NSError(domain: "com.webbleen.thswift",
+        return NSError(domain: "com.webbleen.bilibili",
                        code: ApiParseError.code,
                        userInfo: [NSLocalizedDescriptionKey : "A Parsing error occured"])
     }
