@@ -59,9 +59,9 @@ class LaunchView: BaseView {
         imageView.snp.makeConstraints { (make) in
             make.edges.equalToSuperview()
         }
-        //imageView.sd_setImage(with: URL(string: "https://img.zcool.cn/community/01e3ee5a6f2aa8a801213466f492ba.JPG@2o.jpg"))
-        imageView.image = UIImage.init(named: "bilibili_splash_iphone_bg")
-        imageView.contentMode = .scaleAspectFit
+//        imageView.sd_setImage(with: URL(string: "https://img.zcool.cn/community/01e3ee5a6f2aa8a801213466f492ba.JPG@2o.jpg"))
+        imageView.image = UIImage.init(named: "bilibili_splash_default")
+        imageView.contentMode = .center
         guard let window = UIApplication.shared.delegate?.window else {
             dismiss()
             return
