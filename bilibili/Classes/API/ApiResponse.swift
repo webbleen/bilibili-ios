@@ -39,21 +39,11 @@ struct ApiParseError: Error {
 
 // This wraps a successful API response and it includes the generic data as well
 // The reason why we need this wrapper is that we want to pass to the client the status code and the raw response as well
-struct ApiResponse<T:Decodable> {
-    let entity: T
-    
-    let data: Data?
-    let httpUrlResponse: HTTPURLResponse
-    
-    init(data: Data?, httpUrlResponse: HTTPURLResponse) throws {
-        do {
-            self.entity = try JSONDecoder().decode(T.self, from: data ?? Data())
-            self.httpUrlResponse = httpUrlResponse
-            self.data = data
-        } catch {
-            throw ApiParseError(data: data, httpUrlResponse: httpUrlResponse, error: error)
-        }
-    }
+struct ApiResponse<T:Decodable>: Decodable {
+    let code: Int
+    let message: String
+    let ttl: Int
+    let data: T?
 }
 
 // Some endpoints might return a 204 No Content

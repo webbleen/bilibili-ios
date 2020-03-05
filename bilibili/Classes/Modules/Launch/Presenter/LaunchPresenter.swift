@@ -22,7 +22,7 @@ class LaunchPresenter: BasePresenter, LaunchPresenterInput {
     
     func getLaunchInfo(requestModel: LaunchRequestModel) {
         launchRepository.execute(requestModel: requestModel, onSuccess: { responseModel in
-            print("getLaunchInfo StatusCode:\(responseModel.code ?? 999 )")
+            print("getLaunchInfo max_time:\(responseModel.max_time ?? 0)")
             self.view?.launchSuccess()
         }) { error in
             print("getLaunchInfo error:\(error.localizedDescription)")

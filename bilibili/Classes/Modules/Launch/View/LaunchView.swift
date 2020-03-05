@@ -19,7 +19,7 @@ class LaunchView: BaseView {
     weak var delegate: LaunchViewDelegate?
     
     var timer: Timer!
-    var interval: Int = 10
+    var interval: Int = 3
     
     lazy var imageView: UIImageView = {
         let imageView = UIImageView()
@@ -54,13 +54,6 @@ class LaunchView: BaseView {
     func setupUI() {
         backgroundColor = .white
         
-        addSubview(imageView)
-        imageView.snp.makeConstraints { (make) in
-            make.edges.equalToSuperview()
-        }
-//        imageView.sd_setImage(with: URL(string: "https://img.zcool.cn/community/01e3ee5a6f2aa8a801213466f492ba.JPG@2o.jpg"))
-        imageView.image = UIImage.init(named: "bilibili_splash_default")
-        imageView.contentMode = .center
         guard let window = UIApplication.shared.delegate?.window else {
             dismiss()
             return
@@ -68,9 +61,17 @@ class LaunchView: BaseView {
         window?.isHidden = false
         window?.addSubview(self)
         
+        addSubview(imageView)
+        imageView.snp.makeConstraints { (make) in
+            make.edges.equalToSuperview()
+        }
+//        imageView.sd_setImage(with: URL(string: "https://img.zcool.cn/community/01e3ee5a6f2aa8a801213466f492ba.JPG@2o.jpg"))
+        imageView.image = UIImage.init(named: "bilibili_splash_default")
+        imageView.contentMode = .center
+        
         addSubview(skipButton)
         skipButton.snp.makeConstraints { (make) in
-            make.top.equalToSuperview().offset(50)
+            make.top.equalToSuperview().offset(35)
             make.right.equalToSuperview().offset(-25)
             make.size.equalTo(CGSize(width: 80, height: 30))
         }

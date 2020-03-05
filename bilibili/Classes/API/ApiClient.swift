@@ -9,7 +9,7 @@
 import Foundation
 
 protocol ApiAdaptor {
-    func execute<T>(request: ApiRequest, completionHandler: @escaping (_ result: Result<ApiResponse<T>>) -> Void)
+    func execute<T>(request: URLRequest, completionHandler: @escaping (_ result: Result<ApiResponse<T>>) -> Void)
 }
 
 protocol URLSessionProtocol {
@@ -30,9 +30,9 @@ class ApiClient: ApiAdaptor {
     }
     
     // MARK: - ApiClient
-    func execute<T>(request: ApiRequest, completionHandler: @escaping (Result<ApiResponse<T>>) -> Void) {
-        let task = urlSession.dataTask(with: request.urlRequest) { (data, response, error) in 
-            guard let httpUrlResponse = response as? HTTPURLResponse else {
+    func execute<T>(request urlRequest: URLRequest, completionHandler: @escaping (Result<ApiResponse<T>>) -> Void) {
+        let task = urlSession.dataTask(with: urlRequest) { (data, response, error) in
+            guard let httpUrlResponse = response as? HTTPURLResponse, let data = data else {
                 //网络连接错误
                 completionHandler(.failure(NetWorkRequestError(error: error)))
                 return
@@ -42,11 +42,11 @@ class ApiClient: ApiAdaptor {
             if successRange.contains(httpUrlResponse.statusCode) {
                 do {
                     // 正常业务处理
-                    let response = try ApiResponse<T>(data: data, httpUrlResponse: httpUrlResponse)
+                    let response = try JSONDecoder().decode(ApiResponse<T>.self, from: data)
                     completionHandler(.success(response))
-                } catch {
+                } catch let e {
                     // JSONDecoder解析失败处理
-                    completionHandler(.failure(error))
+                    completionHandler(.failure(ApiParseError(data: data, httpUrlResponse: httpUrlResponse, error: e)))
                 }
             } else {
                 //HTTP服务器状态错误

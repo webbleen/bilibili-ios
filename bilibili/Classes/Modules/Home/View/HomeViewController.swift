@@ -9,5 +9,26 @@
 import UIKit
 
 class HomeViewController: BaseViewController {
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        setupSubviews()
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+    }
+    
+    override func viewWillLayoutSubviews() {
+        layoutSubviews()
+    }
+    
+    func setupSubviews() {
+        
+    }
+    
+    func layoutSubviews() {
+        
+    }
+    
     
 }
