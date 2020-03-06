@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		8A0D8AD6240CB22400FDAE81 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A0D8AD5240CB22400FDAE81 /* AppDelegate.swift */; };
-		8A0D8ADA240CB22400FDAE81 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A0D8AD9240CB22400FDAE81 /* ViewController.swift */; };
 		8A0D8ADF240CB22700FDAE81 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8A0D8ADE240CB22700FDAE81 /* Assets.xcassets */; };
 		8A0D8AE2240CB22700FDAE81 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8A0D8AE0240CB22700FDAE81 /* LaunchScreen.storyboard */; };
 		8A0D8AED240CB22800FDAE81 /* bilibiliTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A0D8AEC240CB22800FDAE81 /* bilibiliTests.swift */; };
@@ -62,7 +61,6 @@
 		8206C74B065CFD503D9DDD1E /* Pods-bilibili.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-bilibili.debug.xcconfig"; path = "Target Support Files/Pods-bilibili/Pods-bilibili.debug.xcconfig"; sourceTree = "<group>"; };
 		8A0D8AD2240CB22400FDAE81 /* 哔哩哔哩.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "哔哩哔哩.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		8A0D8AD5240CB22400FDAE81 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		8A0D8AD9240CB22400FDAE81 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		8A0D8ADE240CB22700FDAE81 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8A0D8AE1240CB22700FDAE81 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		8A0D8AE3240CB22700FDAE81 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -170,10 +168,7 @@
 			isa = PBXGroup;
 			children = (
 				8A0D8B06240CFAF200FDAE81 /* Classes */,
-				8A0D8AD5240CB22400FDAE81 /* AppDelegate.swift */,
-				8A0D8AD9240CB22400FDAE81 /* ViewController.swift */,
-				8A0D8ADE240CB22700FDAE81 /* Assets.xcassets */,
-				8A0D8AE0240CB22700FDAE81 /* LaunchScreen.storyboard */,
+				8A0EFEFA2411ECCC00430DD4 /* Support Files */,
 				8A0D8AE3240CB22700FDAE81 /* Info.plist */,
 			);
 			path = bilibili;
@@ -477,6 +472,16 @@
 			path = View;
 			sourceTree = "<group>";
 		};
+		8A0EFEFA2411ECCC00430DD4 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				8A0D8AD5240CB22400FDAE81 /* AppDelegate.swift */,
+				8A0D8ADE240CB22700FDAE81 /* Assets.xcassets */,
+				8A0D8AE0240CB22700FDAE81 /* LaunchScreen.storyboard */,
+			);
+			path = "Support Files";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -664,7 +669,6 @@
 				8A0EFEF22410EEB100430DD4 /* Constants.swift in Sources */,
 				8A0EFEE9240FC6CE00430DD4 /* HomeViewController.swift in Sources */,
 				8A0D8B1D240CFAF200FDAE81 /* JSON.swift in Sources */,
-				8A0D8ADA240CB22400FDAE81 /* ViewController.swift in Sources */,
 				8A0EFEEB240FC6CE00430DD4 /* MineViewController.swift in Sources */,
 				8A0EFECE240FC47200430DD4 /* TabBarViewController.swift in Sources */,
 				8A0D8B37240DFD2400FDAE81 /* LaunchView.swift in Sources */,

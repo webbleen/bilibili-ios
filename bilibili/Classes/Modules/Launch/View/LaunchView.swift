@@ -71,7 +71,7 @@ class LaunchView: BaseView {
         
         addSubview(skipButton)
         skipButton.snp.makeConstraints { (make) in
-            make.top.equalToSuperview().offset(35)
+            make.bottom.equalToSuperview().offset(-35)
             make.right.equalToSuperview().offset(-25)
             make.size.equalTo(CGSize(width: 80, height: 30))
         }
