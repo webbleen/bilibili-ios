@@ -36,7 +36,7 @@ class HomeViewController: BaseViewController {
         view.addSubview(collectionView)
         
         // 注册cell
-        collectionView.register(CollectionViewCell.self, forCellWithReuseIdentifier: "\(CollectionViewCell.self)")
+        collectionView.register(HomeCollectionCell.self, forCellWithReuseIdentifier: "\(HomeCollectionCell.self)")
     }
     
     func layoutSubviews() {
@@ -59,7 +59,7 @@ extension HomeViewController: UICollectionViewDataSource , UICollectionViewDeleg
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "\(CollectionViewCell.self)", for: indexPath)
+        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "\(HomeCollectionCell.self)", for: indexPath)
         return cell
     }
     

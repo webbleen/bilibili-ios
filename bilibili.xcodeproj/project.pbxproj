@@ -40,6 +40,9 @@
 		8A0EFEFF24120F8700430DD4 /* DateFormatter+Additions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A0EFEFE24120F8700430DD4 /* DateFormatter+Additions.swift */; };
 		8A12010B240E85B2002E2A8E /* BaseRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A12010A240E85B2002E2A8E /* BaseRepository.swift */; };
 		8A12010D240E873C002E2A8E /* LaunchRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A12010C240E873C002E2A8E /* LaunchRepository.swift */; };
+		8A96699724125D12000089B7 /* String+Additions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A96699624125D12000089B7 /* String+Additions.swift */; };
+		8A96699924125FB0000089B7 /* HomeCollectionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A96699824125FB0000089B7 /* HomeCollectionCell.swift */; };
+		8A96699B2412665C000089B7 /* HomeRecommendModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A96699A2412665C000089B7 /* HomeRecommendModel.swift */; };
 		9D6D7BFDC720920788C289A9 /* Pods_bilibili.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FB45E8415A42089D7FA730F5 /* Pods_bilibili.framework */; };
 /* End PBXBuildFile section */
 
@@ -101,6 +104,9 @@
 		8A0EFEFE24120F8700430DD4 /* DateFormatter+Additions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "DateFormatter+Additions.swift"; sourceTree = "<group>"; };
 		8A12010A240E85B2002E2A8E /* BaseRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseRepository.swift; sourceTree = "<group>"; };
 		8A12010C240E873C002E2A8E /* LaunchRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchRepository.swift; sourceTree = "<group>"; };
+		8A96699624125D12000089B7 /* String+Additions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Additions.swift"; sourceTree = "<group>"; };
+		8A96699824125FB0000089B7 /* HomeCollectionCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeCollectionCell.swift; sourceTree = "<group>"; };
+		8A96699A2412665C000089B7 /* HomeRecommendModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeRecommendModel.swift; sourceTree = "<group>"; };
 		C33D1890A4844653C8AE2097 /* Pods-bilibili.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-bilibili.release.xcconfig"; path = "Target Support Files/Pods-bilibili/Pods-bilibili.release.xcconfig"; sourceTree = "<group>"; };
 		FB45E8415A42089D7FA730F5 /* Pods_bilibili.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_bilibili.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -324,6 +330,7 @@
 			isa = PBXGroup;
 			children = (
 				8A0EFED7240FC6CE00430DD4 /* View */,
+				8A96699A2412665C000089B7 /* HomeRecommendModel.swift */,
 			);
 			path = Home;
 			sourceTree = "<group>";
@@ -332,6 +339,7 @@
 			isa = PBXGroup;
 			children = (
 				8A0EFED8240FC6CE00430DD4 /* HomeViewController.swift */,
+				8A96699824125FB0000089B7 /* HomeCollectionCell.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -399,6 +407,7 @@
 			children = (
 				8A0EFEFC24120E1A00430DD4 /* JSON+Additions.swift */,
 				8A0EFEFE24120F8700430DD4 /* DateFormatter+Additions.swift */,
+				8A96699624125D12000089B7 /* String+Additions.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -584,7 +593,9 @@
 				8A0D8B40240E66EA00FDAE81 /* BaseViewController.swift in Sources */,
 				8A0EFEEA240FC6CE00430DD4 /* ChannelViewController.swift in Sources */,
 				8A0EFEEE241099B600430DD4 /* ApplicationController.swift in Sources */,
+				8A96699B2412665C000089B7 /* HomeRecommendModel.swift in Sources */,
 				8A0EFEE8240FC6CE00430DD4 /* VipViewController.swift in Sources */,
+				8A96699924125FB0000089B7 /* HomeCollectionCell.swift in Sources */,
 				8A0D8B42240E675E00FDAE81 /* BaseParamObj.swift in Sources */,
 				8A0D8B35240DFD2400FDAE81 /* LaunchPresenter.swift in Sources */,
 				8A0EFEF22410EEB100430DD4 /* Constants.swift in Sources */,
@@ -603,6 +614,7 @@
 				8A0EFEFD24120E1A00430DD4 /* JSON+Additions.swift in Sources */,
 				8A0D8B34240DFD2400FDAE81 /* LaunchModel.swift in Sources */,
 				8A12010D240E873C002E2A8E /* LaunchRepository.swift in Sources */,
+				8A96699724125D12000089B7 /* String+Additions.swift in Sources */,
 				8A0D8B1B240CFAF200FDAE81 /* Result.swift in Sources */,
 				8A0D8B46240E74BE00FDAE81 /* LaunchParamObj.swift in Sources */,
 				8A0D8B1F240CFAF200FDAE81 /* ApiRequest.swift in Sources */,

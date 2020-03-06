@@ -22,8 +22,12 @@ struct LaunchRequestModel: Encodable {
     var width: Int?
 }
 
-struct ExtraModel: Decodable {
-    var use_ad_web_v2: Bool?
+struct LaunchResponseModel: Decodable {
+    var max_time: Int?
+    var min_interval: Int?
+    var pull_interval: Int?
+    var list: [ListModel]?
+    var show: [ShowModel]?
 }
 
 struct ListModel: Decodable {
@@ -56,10 +60,6 @@ struct ShowModel: Decodable {
     var etime: Int?
 }
 
-struct LaunchResponseModel: Decodable {
-    var max_time: Int?
-    var min_interval: Int?
-    var pull_interval: Int?
-    var list: [ListModel]?
-    var show: [ShowModel]?
+struct ExtraModel: Decodable {
+    var use_ad_web_v2: Bool?
 }
