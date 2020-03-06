@@ -42,11 +42,11 @@ class ApiClient: ApiAdaptor {
             if successRange.contains(httpUrlResponse.statusCode) {
                 do {
                     // 正常业务处理
-                    let response = try JSONDecoder().decode(ApiResponse<T>.self, from: data)
+                    let response = try JSONDecoder.createDecoder.decode(ApiResponse<T>.self, from: data)
                     completionHandler(.success(response))
-                } catch let e {
+                } catch let err {
                     // JSONDecoder解析失败处理
-                    completionHandler(.failure(ApiParseError(data: data, httpUrlResponse: httpUrlResponse, error: e)))
+                    completionHandler(.failure(ApiParseError(data: data, httpUrlResponse: httpUrlResponse, error: err)))
                 }
             } else {
                 //HTTP服务器状态错误

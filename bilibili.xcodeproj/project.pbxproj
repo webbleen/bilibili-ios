@@ -35,6 +35,8 @@
 		8A0EFEEC240FC6CE00430DD4 /* DynamicViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A0EFEE7240FC6CE00430DD4 /* DynamicViewController.swift */; };
 		8A0EFEEE241099B600430DD4 /* ApplicationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A0EFEED241099B600430DD4 /* ApplicationController.swift */; };
 		8A0EFEF22410EEB100430DD4 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A0EFEF12410EEB100430DD4 /* Constants.swift */; };
+		8A0EFEFD24120E1A00430DD4 /* JSON+Additions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A0EFEFC24120E1A00430DD4 /* JSON+Additions.swift */; };
+		8A0EFEFF24120F8700430DD4 /* DateFormatter+Additions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A0EFEFE24120F8700430DD4 /* DateFormatter+Additions.swift */; };
 		8A12010B240E85B2002E2A8E /* BaseRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A12010A240E85B2002E2A8E /* BaseRepository.swift */; };
 		8A12010D240E873C002E2A8E /* LaunchRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A12010C240E873C002E2A8E /* LaunchRepository.swift */; };
 		9D6D7BFDC720920788C289A9 /* Pods_bilibili.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FB45E8415A42089D7FA730F5 /* Pods_bilibili.framework */; };
@@ -93,6 +95,8 @@
 		8A0EFEE7240FC6CE00430DD4 /* DynamicViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DynamicViewController.swift; sourceTree = "<group>"; };
 		8A0EFEED241099B600430DD4 /* ApplicationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApplicationController.swift; sourceTree = "<group>"; };
 		8A0EFEF12410EEB100430DD4 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		8A0EFEFC24120E1A00430DD4 /* JSON+Additions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "JSON+Additions.swift"; sourceTree = "<group>"; };
+		8A0EFEFE24120F8700430DD4 /* DateFormatter+Additions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "DateFormatter+Additions.swift"; sourceTree = "<group>"; };
 		8A12010A240E85B2002E2A8E /* BaseRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseRepository.swift; sourceTree = "<group>"; };
 		8A12010C240E873C002E2A8E /* LaunchRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchRepository.swift; sourceTree = "<group>"; };
 		C33D1890A4844653C8AE2097 /* Pods-bilibili.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-bilibili.release.xcconfig"; path = "Target Support Files/Pods-bilibili/Pods-bilibili.release.xcconfig"; sourceTree = "<group>"; };
@@ -167,9 +171,9 @@
 		8A0D8AD4240CB22400FDAE81 /* bilibili */ = {
 			isa = PBXGroup;
 			children = (
+				8A0D8AD5240CB22400FDAE81 /* AppDelegate.swift */,
 				8A0D8B06240CFAF200FDAE81 /* Classes */,
-				8A0EFEFA2411ECCC00430DD4 /* Support Files */,
-				8A0D8AE3240CB22700FDAE81 /* Info.plist */,
+				8A0EFEFA2411ECCC00430DD4 /* Supporting Files */,
 			);
 			path = bilibili;
 			sourceTree = "<group>";
@@ -198,9 +202,10 @@
 				8A0EFEF12410EEB100430DD4 /* Constants.swift */,
 				8A0D8B0F240CFAF200FDAE81 /* Result.swift */,
 				8A0EFEED241099B600430DD4 /* ApplicationController.swift */,
-				8A0D8B07240CFAF200FDAE81 /* Modules */,
-				8A0D8B3A240E625B00FDAE81 /* MVP */,
 				8A0D8B10240CFAF200FDAE81 /* API */,
+				8A0D8B3A240E625B00FDAE81 /* MVP */,
+				8A0EFEFB24120DC900430DD4 /* Extensions */,
+				8A0D8B07240CFAF200FDAE81 /* Modules */,
 			);
 			path = Classes;
 			sourceTree = "<group>";
@@ -233,9 +238,10 @@
 		8A0D8B2D240DFD2400FDAE81 /* Launch */ = {
 			isa = PBXGroup;
 			children = (
-				8A0EFEC7240FB69F00430DD4 /* Model */,
+				8A0D8B2E240DFD2400FDAE81 /* LaunchModel.swift */,
+				8A12010C240E873C002E2A8E /* LaunchRepository.swift */,
+				8A0D8B2F240DFD2400FDAE81 /* LaunchPresenter.swift */,
 				8A0EFEC6240FB65400430DD4 /* View */,
-				8A0EFEC8240FB75C00430DD4 /* Presenter */,
 			);
 			path = Launch;
 			sourceTree = "<group>";
@@ -263,38 +269,12 @@
 			path = View;
 			sourceTree = "<group>";
 		};
-		8A0EFEC7240FB69F00430DD4 /* Model */ = {
-			isa = PBXGroup;
-			children = (
-				8A0D8B2E240DFD2400FDAE81 /* LaunchModel.swift */,
-				8A12010C240E873C002E2A8E /* LaunchRepository.swift */,
-			);
-			path = Model;
-			sourceTree = "<group>";
-		};
-		8A0EFEC8240FB75C00430DD4 /* Presenter */ = {
-			isa = PBXGroup;
-			children = (
-				8A0D8B2F240DFD2400FDAE81 /* LaunchPresenter.swift */,
-			);
-			path = Presenter;
-			sourceTree = "<group>";
-		};
 		8A0EFEC9240FC40F00430DD4 /* TabBar */ = {
 			isa = PBXGroup;
 			children = (
-				8A0EFECA240FC42F00430DD4 /* Model */,
 				8A0EFECB240FC43600430DD4 /* View */,
-				8A0EFECC240FC44100430DD4 /* Presenter */,
 			);
 			path = TabBar;
-			sourceTree = "<group>";
-		};
-		8A0EFECA240FC42F00430DD4 /* Model */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Model;
 			sourceTree = "<group>";
 		};
 		8A0EFECB240FC43600430DD4 /* View */ = {
@@ -305,35 +285,12 @@
 			path = View;
 			sourceTree = "<group>";
 		};
-		8A0EFECC240FC44100430DD4 /* Presenter */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Presenter;
-			sourceTree = "<group>";
-		};
 		8A0EFECF240FC6CE00430DD4 /* Vip */ = {
 			isa = PBXGroup;
 			children = (
-				8A0EFED0240FC6CE00430DD4 /* Presenter */,
-				8A0EFED1240FC6CE00430DD4 /* Model */,
 				8A0EFED2240FC6CE00430DD4 /* View */,
 			);
 			path = Vip;
-			sourceTree = "<group>";
-		};
-		8A0EFED0240FC6CE00430DD4 /* Presenter */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Presenter;
-			sourceTree = "<group>";
-		};
-		8A0EFED1240FC6CE00430DD4 /* Model */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Model;
 			sourceTree = "<group>";
 		};
 		8A0EFED2240FC6CE00430DD4 /* View */ = {
@@ -347,25 +304,9 @@
 		8A0EFED4240FC6CE00430DD4 /* Home */ = {
 			isa = PBXGroup;
 			children = (
-				8A0EFED5240FC6CE00430DD4 /* Presenter */,
-				8A0EFED6240FC6CE00430DD4 /* Model */,
 				8A0EFED7240FC6CE00430DD4 /* View */,
 			);
 			path = Home;
-			sourceTree = "<group>";
-		};
-		8A0EFED5240FC6CE00430DD4 /* Presenter */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Presenter;
-			sourceTree = "<group>";
-		};
-		8A0EFED6240FC6CE00430DD4 /* Model */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Model;
 			sourceTree = "<group>";
 		};
 		8A0EFED7240FC6CE00430DD4 /* View */ = {
@@ -379,25 +320,9 @@
 		8A0EFED9240FC6CE00430DD4 /* Channel */ = {
 			isa = PBXGroup;
 			children = (
-				8A0EFEDA240FC6CE00430DD4 /* Presenter */,
-				8A0EFEDB240FC6CE00430DD4 /* Model */,
 				8A0EFEDC240FC6CE00430DD4 /* View */,
 			);
 			path = Channel;
-			sourceTree = "<group>";
-		};
-		8A0EFEDA240FC6CE00430DD4 /* Presenter */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Presenter;
-			sourceTree = "<group>";
-		};
-		8A0EFEDB240FC6CE00430DD4 /* Model */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Model;
 			sourceTree = "<group>";
 		};
 		8A0EFEDC240FC6CE00430DD4 /* View */ = {
@@ -411,25 +336,9 @@
 		8A0EFEDE240FC6CE00430DD4 /* Mine */ = {
 			isa = PBXGroup;
 			children = (
-				8A0EFEDF240FC6CE00430DD4 /* Presenter */,
-				8A0EFEE0240FC6CE00430DD4 /* Model */,
 				8A0EFEE1240FC6CE00430DD4 /* View */,
 			);
 			path = Mine;
-			sourceTree = "<group>";
-		};
-		8A0EFEDF240FC6CE00430DD4 /* Presenter */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Presenter;
-			sourceTree = "<group>";
-		};
-		8A0EFEE0240FC6CE00430DD4 /* Model */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Model;
 			sourceTree = "<group>";
 		};
 		8A0EFEE1240FC6CE00430DD4 /* View */ = {
@@ -443,25 +352,9 @@
 		8A0EFEE3240FC6CE00430DD4 /* Dynamic */ = {
 			isa = PBXGroup;
 			children = (
-				8A0EFEE4240FC6CE00430DD4 /* Presenter */,
-				8A0EFEE5240FC6CE00430DD4 /* Model */,
 				8A0EFEE6240FC6CE00430DD4 /* View */,
 			);
 			path = Dynamic;
-			sourceTree = "<group>";
-		};
-		8A0EFEE4240FC6CE00430DD4 /* Presenter */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Presenter;
-			sourceTree = "<group>";
-		};
-		8A0EFEE5240FC6CE00430DD4 /* Model */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Model;
 			sourceTree = "<group>";
 		};
 		8A0EFEE6240FC6CE00430DD4 /* View */ = {
@@ -472,14 +365,23 @@
 			path = View;
 			sourceTree = "<group>";
 		};
-		8A0EFEFA2411ECCC00430DD4 /* Support Files */ = {
+		8A0EFEFA2411ECCC00430DD4 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				8A0D8AD5240CB22400FDAE81 /* AppDelegate.swift */,
+				8A0D8AE3240CB22700FDAE81 /* Info.plist */,
 				8A0D8ADE240CB22700FDAE81 /* Assets.xcassets */,
 				8A0D8AE0240CB22700FDAE81 /* LaunchScreen.storyboard */,
 			);
-			path = "Support Files";
+			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		8A0EFEFB24120DC900430DD4 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				8A0EFEFC24120E1A00430DD4 /* JSON+Additions.swift */,
+				8A0EFEFE24120F8700430DD4 /* DateFormatter+Additions.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -672,11 +574,13 @@
 				8A0EFEEB240FC6CE00430DD4 /* MineViewController.swift in Sources */,
 				8A0EFECE240FC47200430DD4 /* TabBarViewController.swift in Sources */,
 				8A0D8B37240DFD2400FDAE81 /* LaunchView.swift in Sources */,
+				8A0EFEFF24120F8700430DD4 /* DateFormatter+Additions.swift in Sources */,
 				8A0D8B44240E6BA400FDAE81 /* LaunchViewDelegate.swift in Sources */,
 				8A0D8B3E240E632200FDAE81 /* BaseView.swift in Sources */,
 				8A0D8B1E240CFAF200FDAE81 /* ApiResponse.swift in Sources */,
 				8A0D8AD6240CB22400FDAE81 /* AppDelegate.swift in Sources */,
 				8A0D8B39240DFD2400FDAE81 /* LaunchViewController.swift in Sources */,
+				8A0EFEFD24120E1A00430DD4 /* JSON+Additions.swift in Sources */,
 				8A0D8B34240DFD2400FDAE81 /* LaunchModel.swift in Sources */,
 				8A12010D240E873C002E2A8E /* LaunchRepository.swift in Sources */,
 				8A0D8B1B240CFAF200FDAE81 /* Result.swift in Sources */,
@@ -849,7 +753,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 8470;
-				INFOPLIST_FILE = bilibili/Info.plist;
+				INFOPLIST_FILE = "bilibili/Supporting Files/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -870,7 +774,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 8470;
-				INFOPLIST_FILE = bilibili/Info.plist;
+				INFOPLIST_FILE = "bilibili/Supporting Files/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",

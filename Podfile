@@ -6,7 +6,6 @@ target 'bilibili' do
   use_frameworks!
 
   # Pods for bilibili
-    
   pod 'SnapKit', '~> 5.0.0'
   pod 'SDWebImage', '~>5.0.0'
 #  pod "DynamicBlurView"
