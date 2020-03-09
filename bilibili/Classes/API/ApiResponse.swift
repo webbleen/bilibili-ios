@@ -11,7 +11,7 @@ import Foundation
 // Can be thrown when we can't even reach the API
 struct NetWorkRequestError: Error {
     let error: Error?
-    
+
     var localizedDescription: String {
         return error?.localizedDescription ?? "Network request error - no other information"
     }
@@ -27,11 +27,11 @@ struct ApiError: Error {
 
 struct ApiParseError: Error {
     static let code = 999
-    
+
     let data: Data?
     let httpUrlResponse: HTTPURLResponse
     let error: Error?
-    
+
     var localizedDescription: String {
         return error?.localizedDescription ?? "Network request error - no other information"
     }
@@ -52,7 +52,7 @@ struct VoidResponse: Decodable { }
 extension NSError {
     static func createParseError() -> NSError {
         return NSError(domain: "com.webbleen.bilibili",
-                       code: ApiParseError.code,
-                       userInfo: [NSLocalizedDescriptionKey : "A Parsing error occured"])
+            code: ApiParseError.code,
+            userInfo: [NSLocalizedDescriptionKey: "A Parsing error occured"])
     }
 }

@@ -8,6 +8,8 @@ target 'bilibili' do
   # Pods for bilibili
   pod 'SnapKit', '~> 5.0.0'
   pod 'SDWebImage', '~>5.0.0'
+  pod 'XCGLogger', '~>7.0.1'
+  pod 'Kingfisher'
 #  pod "DynamicBlurView"
 #  pod 'ReachabilitySwift', '~> 5.0.0'
 #  pod 'SwiftyJSON'

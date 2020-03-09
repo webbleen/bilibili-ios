@@ -8,14 +8,6 @@
 
 import Foundation
 
-struct CoreError : Error {
-    var localizedDescription: String {
-        return message
-    }
-    
-    var message = ""
-}
-
 enum Result<T> {
     case success(T)
     case failure(Error)

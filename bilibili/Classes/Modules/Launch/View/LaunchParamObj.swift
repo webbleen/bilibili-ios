@@ -13,7 +13,7 @@ class LaunchParamObj: BaseParamObj {
         case normal
         case active
     }
-    
+
     var launchType: LaunchType
     init(launchType: LaunchType = .normal) {
         self.launchType = launchType

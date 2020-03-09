@@ -11,7 +11,7 @@ import UIKit
 
 class BaseViewController: UIViewController {
     var paramObj: BaseParamObj!
-    
+
     override func viewDidLoad() {
         super.viewDidLoad()
         view.backgroundColor = .white

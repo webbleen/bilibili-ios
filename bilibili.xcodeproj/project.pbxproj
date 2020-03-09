@@ -43,6 +43,10 @@
 		8A96699724125D12000089B7 /* String+Additions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A96699624125D12000089B7 /* String+Additions.swift */; };
 		8A96699924125FB0000089B7 /* HomeCollectionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A96699824125FB0000089B7 /* HomeCollectionCell.swift */; };
 		8A96699B2412665C000089B7 /* HomeRecommendModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A96699A2412665C000089B7 /* HomeRecommendModel.swift */; };
+		8A96699D2415DFE0000089B7 /* HomeRecommendRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A96699C2415DFE0000089B7 /* HomeRecommendRepository.swift */; };
+		8A96699F2415EC43000089B7 /* HomeRecommendPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A96699E2415EC43000089B7 /* HomeRecommendPresenter.swift */; };
+		8A9669A12415FF2D000089B7 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A9669A02415FF2D000089B7 /* HomeView.swift */; };
+		8A9669A32415FFB0000089B7 /* HomeViewDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A9669A22415FFB0000089B7 /* HomeViewDelegate.swift */; };
 		9D6D7BFDC720920788C289A9 /* Pods_bilibili.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FB45E8415A42089D7FA730F5 /* Pods_bilibili.framework */; };
 /* End PBXBuildFile section */
 
@@ -107,6 +111,10 @@
 		8A96699624125D12000089B7 /* String+Additions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Additions.swift"; sourceTree = "<group>"; };
 		8A96699824125FB0000089B7 /* HomeCollectionCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeCollectionCell.swift; sourceTree = "<group>"; };
 		8A96699A2412665C000089B7 /* HomeRecommendModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeRecommendModel.swift; sourceTree = "<group>"; };
+		8A96699C2415DFE0000089B7 /* HomeRecommendRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeRecommendRepository.swift; sourceTree = "<group>"; };
+		8A96699E2415EC43000089B7 /* HomeRecommendPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeRecommendPresenter.swift; sourceTree = "<group>"; };
+		8A9669A02415FF2D000089B7 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		8A9669A22415FFB0000089B7 /* HomeViewDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewDelegate.swift; sourceTree = "<group>"; };
 		C33D1890A4844653C8AE2097 /* Pods-bilibili.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-bilibili.release.xcconfig"; path = "Target Support Files/Pods-bilibili/Pods-bilibili.release.xcconfig"; sourceTree = "<group>"; };
 		FB45E8415A42089D7FA730F5 /* Pods_bilibili.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_bilibili.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -263,10 +271,10 @@
 		8A0D8B2D240DFD2400FDAE81 /* Launch */ = {
 			isa = PBXGroup;
 			children = (
+				8A0EFEC6240FB65400430DD4 /* View */,
 				8A0D8B2E240DFD2400FDAE81 /* LaunchModel.swift */,
 				8A12010C240E873C002E2A8E /* LaunchRepository.swift */,
 				8A0D8B2F240DFD2400FDAE81 /* LaunchPresenter.swift */,
-				8A0EFEC6240FB65400430DD4 /* View */,
 			);
 			path = Launch;
 			sourceTree = "<group>";
@@ -331,6 +339,8 @@
 			children = (
 				8A0EFED7240FC6CE00430DD4 /* View */,
 				8A96699A2412665C000089B7 /* HomeRecommendModel.swift */,
+				8A96699C2415DFE0000089B7 /* HomeRecommendRepository.swift */,
+				8A96699E2415EC43000089B7 /* HomeRecommendPresenter.swift */,
 			);
 			path = Home;
 			sourceTree = "<group>";
@@ -340,6 +350,8 @@
 			children = (
 				8A0EFED8240FC6CE00430DD4 /* HomeViewController.swift */,
 				8A96699824125FB0000089B7 /* HomeCollectionCell.swift */,
+				8A9669A02415FF2D000089B7 /* HomeView.swift */,
+				8A9669A22415FFB0000089B7 /* HomeViewDelegate.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -588,10 +600,13 @@
 			files = (
 				8A0EFEEC240FC6CE00430DD4 /* DynamicViewController.swift in Sources */,
 				8A0D8B1C240CFAF200FDAE81 /* ApiClient.swift in Sources */,
+				8A96699F2415EC43000089B7 /* HomeRecommendPresenter.swift in Sources */,
 				8A0D8B3C240E62EE00FDAE81 /* BasePresenter.swift in Sources */,
 				8A12010B240E85B2002E2A8E /* BaseRepository.swift in Sources */,
 				8A0D8B40240E66EA00FDAE81 /* BaseViewController.swift in Sources */,
+				8A96699D2415DFE0000089B7 /* HomeRecommendRepository.swift in Sources */,
 				8A0EFEEA240FC6CE00430DD4 /* ChannelViewController.swift in Sources */,
+				8A9669A12415FF2D000089B7 /* HomeView.swift in Sources */,
 				8A0EFEEE241099B600430DD4 /* ApplicationController.swift in Sources */,
 				8A96699B2412665C000089B7 /* HomeRecommendModel.swift in Sources */,
 				8A0EFEE8240FC6CE00430DD4 /* VipViewController.swift in Sources */,
@@ -603,6 +618,7 @@
 				8A0D8B1D240CFAF200FDAE81 /* JSON.swift in Sources */,
 				8A0EFEEB240FC6CE00430DD4 /* MineViewController.swift in Sources */,
 				8A0EFECE240FC47200430DD4 /* TabBarViewController.swift in Sources */,
+				8A9669A32415FFB0000089B7 /* HomeViewDelegate.swift in Sources */,
 				8A0D8B37240DFD2400FDAE81 /* LaunchView.swift in Sources */,
 				8A0EFEFF24120F8700430DD4 /* DateFormatter+Additions.swift in Sources */,
 				8A0D8B44240E6BA400FDAE81 /* LaunchViewDelegate.swift in Sources */,

@@ -20,24 +20,26 @@ extension URLSession: URLSessionProtocol { }
 
 class ApiClient: ApiAdaptor {
     let urlSession: URLSessionProtocol
-    
+
     init(urlSession: URLSessionProtocol) {
         self.urlSession = urlSession
     }
-    
+
     init(urlSessionConfiguration: URLSessionConfiguration, completionHandlerQueue: OperationQueue) {
         urlSession = URLSession(configuration: urlSessionConfiguration, delegate: nil, delegateQueue: completionHandlerQueue)
     }
-    
+
     // MARK: - ApiClient
     func execute<T>(request urlRequest: URLRequest, completionHandler: @escaping (Result<ApiResponse<T>>) -> Void) {
         let task = urlSession.dataTask(with: urlRequest) { (data, response, error) in
             guard let httpUrlResponse = response as? HTTPURLResponse, let data = data else {
                 //网络连接错误
+                log.error([urlRequest.url?.path, error?.localizedDescription])
                 completionHandler(.failure(NetWorkRequestError(error: error)))
                 return
             }
-            
+
+            log.debug([urlRequest.url?.path as Any, httpUrlResponse.statusCode])
             let successRange = 200...299
             if successRange.contains(httpUrlResponse.statusCode) {
                 do {
@@ -46,6 +48,7 @@ class ApiClient: ApiAdaptor {
                     completionHandler(.success(response))
                 } catch let err {
                     // JSONDecoder解析失败处理
+                    log.error([urlRequest.url?.path, err.localizedDescription])
                     completionHandler(.failure(ApiParseError(data: data, httpUrlResponse: httpUrlResponse, error: err)))
                 }
             } else {

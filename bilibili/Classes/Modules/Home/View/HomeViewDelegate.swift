@@ -1,13 +1,12 @@
 //
-//  BaseParamObj.swift
+//  HomeViewDelegate.swift
 //  bilibili
 //
-//  Created by WENBIN.LI on 3/3/20.
+//  Created by WENBIN.LI on 3/9/20.
 //  Copyright © 2020 webbleen. All rights reserved.
 //
 
 import Foundation
 
-class BaseParamObj {
-
+@objc protocol HomeViewDelegate {
 }

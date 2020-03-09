@@ -9,20 +9,20 @@
 import Foundation
 
 class LaunchPresenter: BasePresenter, LaunchPresenterInput {
-    
+
     private let launchRepository: LaunchRepositoryProtocol
-    
+
     private var view: LaunchPresenterOutput?
-    
+
     required init(view: LaunchPresenterOutput) {
         self.launchRepository = LaunchRepository()
-        
+
         self.view = view
     }
-    
+
     func getLaunchInfo(requestModel: LaunchRequestModel) {
         launchRepository.execute(requestModel: requestModel, onSuccess: { responseModel in
-            print("getLaunchInfo max_time:\(responseModel.max_time ?? 0)")
+            print("getLaunchInfo max_time:\(responseModel?.max_time ?? 0)")
             self.view?.launchSuccess()
         }) { error in
             print("getLaunchInfo error:\(error.localizedDescription)")
